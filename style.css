@@ -1,27 +1,5 @@
-/* Warna Pastel yang Direkomendasikan: */
-/* #F0F8FF - AliceBlue (biru sangat pucat) */
-/* #FFF0F5 - LavenderBlush (merah muda sangat pucat) */
-/* #F5FFFA - MintCream (hijau sangat pucat) */
-/* #FAEBD7 - AntiqueWhite (krem pucat) */
-/* #FDF5E6 - OldLace (krem sedikit lebih gelap) */
-/* #E6E6FA - Lavender (ungu pucat) */
-/* #DDA0DD - Plum (ungu kemerahan pucat) */
-/* #B0E0E6 - PowderBlue (biru muda) */
-/* #FFEBCD - BlanchedAlmond (krem kekuningan) */
-
-:root {
-    --primary-color: #DDA0DD; /* Plum - Ungu kemerahan pucat untuk aksen */
-    --secondary-color: #B0E0E6; /* PowderBlue - Biru muda untuk aksen sekunder */
-    --background-light: #FDF5E6; /* OldLace - Krem untuk latar belakang */
-    --text-dark: #4A4A4A; /* Abu-abu tua untuk teks utama */
-    --text-light: #6B6B6B; /* Abu-abu sedang untuk teks sekunder */
-    --border-color: #E6E6FA; /* Lavender - Ungu pucat untuk garis pembatas */
-    --font-heading: 'Playfair Display', serif;
-    --font-body: 'Lato', sans-serif;
-}
-
 body {
-  background-color: lightblue;
+  background-color: #E6E6FA;
 }
 
 h1 {
