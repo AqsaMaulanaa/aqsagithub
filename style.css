@@ -1,1 +1,299 @@
+/* Warna Pastel yang Direkomendasikan: */
+/* #F0F8FF - AliceBlue (biru sangat pucat) */
+/* #FFF0F5 - LavenderBlush (merah muda sangat pucat) */
+/* #F5FFFA - MintCream (hijau sangat pucat) */
+/* #FAEBD7 - AntiqueWhite (krem pucat) */
+/* #FDF5E6 - OldLace (krem sedikit lebih gelap) */
+/* #E6E6FA - Lavender (ungu pucat) */
+/* #DDA0DD - Plum (ungu kemerahan pucat) */
+/* #B0E0E6 - PowderBlue (biru muda) */
+/* #FFEBCD - BlanchedAlmond (krem kekuningan) */
 
+:root {
+    --primary-color: #DDA0DD; /* Plum - Ungu kemerahan pucat untuk aksen */
+    --secondary-color: #B0E0E6; /* PowderBlue - Biru muda untuk aksen sekunder */
+    --background-light: #FDF5E6; /* OldLace - Krem untuk latar belakang */
+    --text-dark: #4A4A4A; /* Abu-abu tua untuk teks utama */
+    --text-light: #6B6B6B; /* Abu-abu sedang untuk teks sekunder */
+    --border-color: #E6E6FA; /* Lavender - Ungu pucat untuk garis pembatas */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Lato', sans-serif;
+}
+
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--background-light);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header */
+header {
+    background-color: #fff; /* Putih bersih untuk header */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.logo a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.hamburger-menu {
+    display: none; /* Sembunyikan secara default untuk desktop */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger-menu .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-dark);
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('https://via.placeholder.com/1500x600/FDF5E6/808080?text=Gambar+Hero') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 20px;
+    color: var(--text-dark);
+}
+
+.hero-section h2 {
+    font-family: var(--font-heading);
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: var(--text-light);
+}
+
+/* Buttons */
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: 1px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #B26A99; /* Contoh warna sedikit lebih gelap dari primary */
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+
+/* Featured Products */
+.featured-products {
+    padding: 60px 0;
+    text-align: center;
+    background-color: var(--background-light);
+}
+
+.featured-products h3 {
+    font-family: var(--font-heading);
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.product-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-item h4 {
+    font-family: var(--font-heading);
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+}
+
+.product-item p {
+    color: var(--text-light);
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+/* About Us Preview */
+.about-us-preview {
+    background-color: var(--secondary-color); /* PowderBlue */
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about-us-preview h3 {
+    font-family: var(--font-heading);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-us-preview p {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+}
+
+.about-us-preview .btn-secondary {
+    color: #fff;
+    border-color: #fff;
+}
+
+.about-us-preview .btn-secondary:hover {
+    background-color: #fff;
+    color: var(--secondary-color);
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--text-dark); /* Abu-abu gelap untuk footer */
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px; /* Sesuaikan dengan tinggi header */
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        z-index: 999;
+        padding: 20px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .hero-section h2 {
+        font-size: 2.2em;
+    }
+
+    .hero-section p {
+        font-size: 1em;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr; /* Satu kolom untuk mobile */
+    }
+}
