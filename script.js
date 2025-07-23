@@ -1,12 +1,9 @@
-body {
-  background-color: lightblue;
-}
+<button onclick="myFunction()">Click Me!</button>
 
-h1 {
-  color: white;
-  text-align: center;
+<script>
+function myFunction() {
+  let x = document.getElementById("demo");
+  x.style.fontSize = "25px";
+  x.style.color = "red";
 }
-
-p {
-  font-family: verdana;
-}
+</script>
